@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="658.0" y="481.0">model.id.AccessPK</node>
+    <node x="686.0" y="410.0">model.entity.OrdenServicioDet</node>
+    <node x="1191.0" y="253.0">controller.hibernate.HibernateUtilException</node>
+    <node x="0.0" y="182.0">controller.dao.ServicioDAO</node>
+    <node x="1246.0" y="481.0">model.entity.Cliente</node>
+    <node x="408.0" y="182.0">controller.dao.TipoInsumoDAO</node>
+    <node x="805.0" y="481.0">model.entity.Servicio</node>
+    <node x="336.0" y="481.0">model.entity.TipoPrenda</node>
+    <node x="0.0" y="481.0">controller.mail.MailService</node>
+    <node x="266.5" y="253.0">view.AbstractView</node>
+    <node x="1357.0" y="182.0">controller.dao.EmpleadoDAO</node>
+    <node x="469.0" y="410.0">model.id.OrdenServicioDetPK</node>
+    <node x="1158.0" y="182.0">controller.dao.OrdenServicioDetDAO</node>
+    <node x="168.0" y="481.0">controller.qr.QRGenerator</node>
+    <node x="889.0" y="410.0">model.entity.OrdenServicioCab</node>
+    <node x="565.0" y="182.0">controller.dao.InsumoDAO</node>
+    <node x="272.0" y="182.0">controller.dao.ClienteDAO</node>
+    <node x="1288.0" y="410.0">controller.hibernate.HibernateUtil</node>
+    <node x="729.0" y="329.0">controller.mail.GmailProperties</node>
+    <node x="143.0" y="182.0">controller.dao.AccessDAO</node>
+    <node x="0.0" y="410.0">controller.mail.PropertiesMailFactory</node>
+    <node x="497.0" y="481.0">model.entity.TipoInsumo</node>
+    <node x="1526.0" y="481.0">model.entity.Insumo</node>
+    <node x="0.0" y="339.0">view.access.AccessIndex</node>
+    <node x="959.0" y="182.0">controller.dao.OrdenServicioCabDAO</node>
+    <node x="568.0" y="339.0">view.correo.CorreoView</node>
+    <node x="925.0" y="253.0">controller.dao.DataAccessObjectException</node>
+    <node x="238.0" y="410.0">controller.qr.QRGeneratorException</node>
+    <node x="0.0" y="552.0">model.entity.Access</node>
+    <node x="952.0" y="481.0">model.entity.Empleado</node>
+    <node x="143.00000000000003" y="339.0">view.login.Login</node>
+    <node x="244.00000000000003" y="339.0">view.menu.Menu</node>
+    <node x="1092.0" y="410.0">controller.validator.ValidatorEntity</node>
+    <node x="133.0" y="552.0">model.entity.Rol</node>
+    <node x="732.5" y="253.0">controller.mail.MailProperties</node>
+    <node x="1470.0" y="410.0">controller.error.BuilderAlert</node>
+    <node x="1386.0" y="481.0">model.entity.Recurso</node>
+    <node x="683.5" y="0.0">controller.dao.DataAccessObject</node>
+    <node x="701.0" y="76.0">controller.dao.AbstractDAO</node>
+    <node x="446.0" y="339.0">view.login.Registro</node>
+    <node x="851.0" y="182.0">controller.dao.RolDAO</node>
+    <node x="1099.0" y="481.0">model.id.InsumoPK</node>
+    <node x="1500.0" y="182.0">controller.dao.RecursoDAO</node>
+    <node x="694.0" y="182.0">controller.dao.TipoPrendaDAO</node>
+    <node x="338.0" y="339.0">view.code_qr.CodeQR</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="view.access.AccessIndex" target="view.AbstractView">
+      <point x="0.0" y="-13.0" />
+      <point x="61.5" y="299.0" />
+      <point x="277.3333333333333" y="299.0" />
+      <point x="-54.166666666666686" y="13.0" />
+    </edge>
+    <edge source="controller.dao.TipoPrendaDAO" target="controller.dao.AbstractDAO">
+      <point x="0.0" y="-13.0" />
+      <point x="0.0" y="13.0" />
+    </edge>
+    <edge source="controller.dao.RolDAO" target="controller.dao.AbstractDAO">
+      <point x="0.0" y="-13.0" />
+      <point x="895.0" y="162.0" />
+      <point x="773.6818181818181" y="162.0" />
+      <point x="11.18181818181813" y="13.0" />
+    </edge>
+    <edge source="controller.dao.ClienteDAO" target="controller.dao.AbstractDAO">
+      <point x="0.0" y="-13.0" />
+      <point x="330.0" y="142.0" />
+      <point x="728.9545454545455" y="142.0" />
+      <point x="-33.545454545454504" y="13.0" />
+    </edge>
+    <edge source="controller.dao.InsumoDAO" target="controller.dao.AbstractDAO">
+      <point x="0.0" y="-13.0" />
+      <point x="619.5" y="162.0" />
+      <point x="751.3181818181818" y="162.0" />
+      <point x="-11.181818181818244" y="13.0" />
+    </edge>
+    <edge source="controller.dao.AccessDAO" target="controller.dao.AbstractDAO">
+      <point x="0.0" y="-13.0" />
+      <point x="197.5" y="132.0" />
+      <point x="717.7727272727273" y="132.0" />
+      <point x="-44.72727272727275" y="13.0" />
+    </edge>
+    <edge source="controller.dao.EmpleadoDAO" target="controller.dao.AbstractDAO">
+      <point x="0.0" y="-13.0" />
+      <point x="1418.5" y="132.0" />
+      <point x="807.2272727272727" y="132.0" />
+      <point x="44.72727272727275" y="13.0" />
+    </edge>
+    <edge source="view.menu.Menu" target="view.AbstractView">
+      <point x="0.0" y="-13.0" />
+      <point x="281.0" y="319.0" />
+      <point x="320.6666666666667" y="319.0" />
+      <point x="-10.833333333333314" y="13.0" />
+    </edge>
+    <edge source="view.login.Registro" target="view.AbstractView">
+      <point x="0.0" y="-13.0" />
+      <point x="497.0" y="309.0" />
+      <point x="364.0" y="309.0" />
+      <point x="32.5" y="13.0" />
+    </edge>
+    <edge source="controller.dao.RecursoDAO" target="controller.dao.AbstractDAO">
+      <point x="0.0" y="-13.0" />
+      <point x="1558.0" y="122.0" />
+      <point x="818.4090909090909" y="122.0" />
+      <point x="55.90909090909088" y="13.0" />
+    </edge>
+    <edge source="view.correo.CorreoView" target="view.AbstractView">
+      <point x="0.0" y="-13.0" />
+      <point x="626.0" y="299.0" />
+      <point x="385.6666666666667" y="299.0" />
+      <point x="54.166666666666686" y="13.0" />
+    </edge>
+    <edge source="view.login.Login" target="view.AbstractView">
+      <point x="0.0" y="-13.0" />
+      <point x="183.50000000000003" y="309.0" />
+      <point x="299.0" y="309.0" />
+      <point x="-32.5" y="13.0" />
+    </edge>
+    <edge source="controller.dao.OrdenServicioCabDAO" target="controller.dao.AbstractDAO">
+      <point x="0.0" y="-13.0" />
+      <point x="1048.5" y="152.0" />
+      <point x="784.8636363636364" y="152.0" />
+      <point x="22.363636363636374" y="13.0" />
+    </edge>
+    <edge source="controller.dao.OrdenServicioDetDAO" target="controller.dao.AbstractDAO">
+      <point x="0.0" y="-13.0" />
+      <point x="1247.5" y="142.0" />
+      <point x="796.0454545454545" y="142.0" />
+      <point x="33.545454545454504" y="13.0" />
+    </edge>
+    <edge source="controller.mail.GmailProperties" target="controller.mail.MailProperties">
+      <point x="0.0" y="-13.0" />
+      <point x="0.0" y="13.0" />
+    </edge>
+    <edge source="controller.dao.TipoInsumoDAO" target="controller.dao.AbstractDAO">
+      <point x="0.0" y="-13.0" />
+      <point x="476.5" y="152.0" />
+      <point x="740.1363636363636" y="152.0" />
+      <point x="-22.363636363636374" y="13.0" />
+    </edge>
+    <edge source="controller.dao.AbstractDAO" target="controller.dao.DataAccessObject">
+      <point x="0.0" y="-13.0" />
+      <point x="0.0" y="13.0" />
+    </edge>
+    <edge source="view.code_qr.CodeQR" target="view.AbstractView">
+      <point x="0.0" y="-13.0" />
+      <point x="382.0" y="319.0" />
+      <point x="342.33333333333337" y="319.0" />
+      <point x="10.833333333333371" y="13.0" />
+    </edge>
+    <edge source="controller.dao.ServicioDAO" target="controller.dao.AbstractDAO">
+      <point x="0.0" y="-13.0" />
+      <point x="61.5" y="122.0" />
+      <point x="706.5909090909091" y="122.0" />
+      <point x="-55.90909090909088" y="13.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.48494983277591974" x="808.0" y="289.0" />
+  <SelectedNodes>
+    <node>model.id.AccessPK</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

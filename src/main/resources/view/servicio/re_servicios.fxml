@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="608.0" style="-fx-background-color: #001824;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="167.0" layoutY="34.0" prefHeight="31.0" prefWidth="294.0" text="REGISTRO DE SERVICIOS" textFill="#f8f8f8">
+         <font>
+            <Font name="Corbel Bold" size="26.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="60.0" layoutY="83.0" prefHeight="340.0" prefWidth="486.0" style="-fx-background-color: #FCFFFD; -fx-border-radius: 8px;">
+         <children>
+            <Button fx:id="registrar_servicio" layoutX="27.0" layoutY="267.0" mnemonicParsing="false" onAction="#registrar" prefHeight="50.0" prefWidth="183.0" style="-fx-background-color: #001824;" text="REGISTRAR" textAlignment="CENTER" textFill="#f2ecec" textOverrun="WORD_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="Corbel" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelar_servicios" layoutX="280.0" layoutY="267.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="50.0" prefWidth="183.0" style="-fx-background-color: #001824;" text="CANCELAR" textAlignment="CENTER" textFill="#f2ecec" textOverrun="WORD_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="Corbel" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="23.0" layoutY="28.0" text="Insumo:">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="15.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/tipoinsumo.png" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="tipo_insumo_servicio" layoutX="49.0" layoutY="59.0" prefHeight="26.0" prefWidth="183.0" />
+            <TextField fx:id="nombre_servicio" layoutX="290.0" layoutY="62.0" prefHeight="26.0" prefWidth="183.0">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </TextField>
+            <Label layoutX="261.0" layoutY="31.0" text="Nombre :">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="256.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/insumo.png" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="descripcion_servicio" layoutX="49.0" layoutY="125.0" prefHeight="43.0" prefWidth="420.0" />
+            <Label layoutX="23.0" layoutY="98.0" text="Descripción :">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="16.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/description.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="precio_servicio" layoutX="45.0" layoutY="209.0" prefHeight="26.0" prefWidth="183.0" />
+            <TextField fx:id="cantidad_insumo_servicio" layoutX="281.0" layoutY="209.0" prefHeight="26.0" prefWidth="183.0" />
+            <Label layoutX="21.0" layoutY="180.0" text="Precio del Servicio x Kg:">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="251.0" layoutY="180.0" text="Cantidad de Insumo :">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="13.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/precio.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="247.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/cantidad.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

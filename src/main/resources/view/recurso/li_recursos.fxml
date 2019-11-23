@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane_1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="488.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Pane layoutY="35.0" prefHeight="41.0" prefWidth="488.0" style="-fx-background-color: #001824;">
+            <children>
+                <Text fill="WHITE" layoutX="47.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de Recursos" textAlignment="CENTER" wrappingWidth="186.13671875">
+                    <font>
+                        <Font name="Tahoma" size="18.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="25.0" fitWidth="34.0" layoutX="35.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../img/soccer_yellow_card_128px.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <BorderPane layoutX="26.0" layoutY="97.0" prefHeight="25.0" prefWidth="151.0" style="-fx-background-color: #001824;">
+            <right>
+                <Button fx:id="btn_recurso_agregar" mnemonicParsing="false" onAction="#agregar_recurso" prefHeight="23.0" prefWidth="119.0" style="-fx-background-color: #001824;" text="Agregar Recurso" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="Tahoma Bold" size="12.0" />
+                    </font>
+                </Button>
+            </right>
+            <center>
+                <ImageView fitHeight="24.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                    <image>
+                        <Image url="@../../img/add_64px.png" />
+                    </image>
+                </ImageView>
+            </center>
+        </BorderPane>
+        <BorderPane layoutX="243.0" layoutY="97.0" prefHeight="25.0" prefWidth="169.0">
+            <left>
+                <Button fx:id="btn_editar_recurso" mnemonicParsing="false" onAction="#editar_recurso" prefHeight="25.0" prefWidth="53.0" style="-fx-background-color: #001824;" text="editar" textFill="WHITE" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="Tahoma Bold" size="12.0" />
+                    </font>
+                </Button>
+            </left>
+            <right>
+                <Button fx:id="btn_eliminar_recurso" mnemonicParsing="false" onAction="#eliminar_recurso" prefHeight="26.0" prefWidth="68.0" style="-fx-background-color: #001824;" text="eliminar" textFill="WHITE" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="Tahoma Bold" size="12.0" />
+                    </font>
+                </Button>
+            </right>
+            <center>
+                <Button fx:id="btn_ver_recurso" mnemonicParsing="false" onAction="#ver_recurso" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: #001824;" text="ver" textFill="WHITE" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="Tahoma Bold" size="12.0" />
+                    </font>
+                </Button>
+            </center>
+        </BorderPane>
+        <TableView fx:id="tabla_recursos" layoutX="30.0" layoutY="150.0" prefHeight="307.0" prefWidth="424.0" style="-fx-border-color: #001824;">
+            <columns>
+                <TableColumn prefWidth="93.59997177124023" text="ID" />
+                <TableColumn prefWidth="144.00001525878906" text="Nombre" />
+                <TableColumn minWidth="0.0" prefWidth="142.40008544921875" text="Estado" />
+            </columns>
+        </TableView>
+    </children>
+</Pane>

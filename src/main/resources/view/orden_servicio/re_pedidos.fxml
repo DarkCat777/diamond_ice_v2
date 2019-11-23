@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="705.0" prefWidth="1057.0" style="-fx-background-color: #001824;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="306.0" layoutY="14.0" prefHeight="31.0" prefWidth="446.0" text="REGISTRO DE ORDENES DE SERVICIO" textFill="WHITE">
+         <font>
+            <Font name="Corbel Bold" size="26.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="20.0" layoutY="55.0" prefHeight="311.0" prefWidth="374.0" style="-fx-background-color: #001840;">
+         <children>
+            <Label layoutX="157.0" layoutY="3.0" text="CLIENTE" textAlignment="CENTER" textFill="#fffefe">
+               <font>
+                  <Font name="Corbel Bold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="16.0" layoutY="29.0" prefHeight="257.0" prefWidth="341.0" style="-fx-background-color: #FCFFFD;">
+               <children>
+                  <Label layoutX="47.0" layoutY="14.0" text="DNI : ">
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nombre_apellido_cliente" disable="true" layoutX="60.0" layoutY="89.0" prefHeight="26.0" prefWidth="223.0" promptText="Nombre del Cliente">
+                     <font>
+                        <Font name="Corbel" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="48.0" layoutY="67.0" text="Nombres y Apellidos :">
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="dni_cliente" layoutX="61.0" layoutY="36.0" prefHeight="26.0" prefWidth="223.0" promptText="Escriba el DNI para seleccionarlo.">
+                     <font>
+                        <Font name="Corbel" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="direccion_cliente" disable="true" layoutX="58.0" layoutY="147.0" prefHeight="26.0" prefWidth="223.0" promptText="Correo del Cliente">
+                     <font>
+                        <Font name="Corbel" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="48.0" layoutY="125.0" text="Dirección:">
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="editar_cli_orde" layoutX="25.0" layoutY="200.0" mnemonicParsing="false" onAction="#editar_cliente" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #001824;" text="EDITAR" textAlignment="CENTER" textFill="#f2ecec" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="nuevo_cli_or" layoutX="201.0" layoutY="200.0" mnemonicParsing="false" onAction="#nuevo_cliente" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #001824;" text="NUEVO CLIENTE" textAlignment="CENTER" textFill="#f2ecec" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="23.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/DNI.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="23.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/user_male_username.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="21.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/correo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="293.0" layoutY="36.0" onMouseClicked="#buscar_cliente" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/buscar.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="409.0" layoutY="55.0" prefHeight="420.0" prefWidth="626.0" style="-fx-background-color: #001840;">
+         <children>
+            <Label layoutX="32.0" layoutY="5.0" text="REGISTRO DE SERVICIOS" textFill="#fffefe">
+               <font>
+                  <Font name="Corbel Bold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="12.0" layoutY="35.0" prefHeight="370.0" prefWidth="603.0" style="-fx-background-color: #FCFFFD;">
+               <children>
+                  <TableView fx:id="tabla_servicios" editable="true" layoutX="12.0" layoutY="11.0" prefHeight="311.0" prefWidth="577.0">
+                     <columns>
+                        <TableColumn prefWidth="126.39999771118164" text="Prenda" />
+                        <TableColumn prefWidth="76.0" text="Cantidad" />
+                        <TableColumn prefWidth="79.0" text="Kg" />
+                        <TableColumn prefWidth="94.0" text="Precio / Kg" />
+                        <TableColumn prefWidth="236.0" text="Total" />
+                        <TableColumn prefWidth="123.9999877929688" text="Acción" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="305.0" layoutY="335.0" text="Total : ">
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="total_orden" layoutX="373.0" layoutY="331.0" prefHeight="26.0" prefWidth="191.0">
+                     <font>
+                        <Font name="Corbel" size="12.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="271.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/money.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="edit_orden_servicio_det" layoutX="14.0" layoutY="332.0" mnemonicParsing="false" onAction="#editar_det" style="-fx-background-color: #001824;" text="Editar" textFill="WHITE" />
+                  <Button fx:id="delete_orden_servicio_det" layoutX="83.0" layoutY="331.0" mnemonicParsing="false" onAction="#delete_det" style="-fx-background-color: #001824;" text="Eliminar" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="20.0" layoutY="358.0" prefHeight="342.0" prefWidth="374.0" style="-fx-background-color: #001840;">
+         <children>
+            <AnchorPane layoutX="17.0" layoutY="25.0" prefHeight="298.0" prefWidth="341.0" style="-fx-background-color: #FCFFFD;">
+               <children>
+                  <Label layoutX="41.0" layoutY="61.0" text="Tipo de Prenda :">
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="peso_orden" layoutX="56.0" layoutY="137.0" prefHeight="26.0" prefWidth="87.0" promptText="Peso en Kg">
+                     <font>
+                        <Font name="Corbel" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="42.0" layoutY="114.0" text="Kg : ">
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="39.0" layoutY="9.0" text="Servicio:">
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="servicio_orden" layoutX="56.0" layoutY="31.0" prefHeight="26.0" prefWidth="249.0" promptText="Eliga el Servicio">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </ComboBox>
+                  <Button fx:id="agregar_servicio" layoutX="115.0" layoutY="254.0" mnemonicParsing="false" onAction="#agregar_servicio" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #001824;" text="AGREGAR" textAlignment="CENTER" textFill="#f2ecec" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="29.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/tipoinsumo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="29.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/clothe.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="29.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/cantidad.png" />
+                     </image>
+                  </ImageView>
+                  <ComboBox fx:id="tipo_prenda" layoutX="56.0" layoutY="86.0" prefHeight="25.0" prefWidth="249.0" promptText="Elija el Tipo de Prenda" />
+                  <TextArea fx:id="descripcion" layoutX="59.0" layoutY="196.0" prefHeight="48.0" prefWidth="249.0" promptText="Escriba la descripcion de las prendas." />
+                  <Label layoutX="32.0" layoutY="180.0" text="Descripcion:">
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="29.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/description.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="cantidad_prenda" layoutX="192.0" layoutY="140.0" prefHeight="26.0" prefWidth="112.0" promptText="Cantidad de prendas.">
+                     <font>
+                        <Font name="Corbel" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="178.0" layoutY="117.0" text="Cantidad de Prendas:">
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="165.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/cantidad.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="156.0" layoutY="3.0" text="SERVICIO" textFill="#fffefe">
+               <font>
+                  <Font name="Corbel Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="513.0" layoutY="475.0" prefHeight="124.0" prefWidth="419.0" style="-fx-background-color: #001840;">
+         <children>
+            <AnchorPane layoutX="11.0" layoutY="22.0" prefHeight="87.0" prefWidth="389.0" style="-fx-background-color: #FCFFFD;">
+               <children>
+                  <TextField fx:id="total_orden_pagar" layoutX="175.0" layoutY="47.0" prefHeight="26.0" prefWidth="191.0">
+                     <font>
+                        <Font name="Corbel" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="pago_adelantado" layoutX="175.0" layoutY="14.0" prefHeight="26.0" prefWidth="191.0">
+                     <font>
+                        <Font name="Corbel" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="54.0" layoutY="19.0" text="Pago Adelantado :">
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="63.0" layoutY="52.0" text="Total a pagar :">
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/money.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="30.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/money2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="31.0" layoutY="3.0" text="COSTO" textFill="#fffefe">
+               <font>
+                  <Font name="Corbel Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="cancelar" layoutX="792.0" layoutY="625.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="48.0" prefWidth="235.0" style="-fx-background-color: #FFF;" text="CANCELAR" textAlignment="CENTER" textFill="#111010" textOverrun="WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Corbel" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="agregar_orden_all" layoutX="444.0" layoutY="625.0" mnemonicParsing="false" onAction="#agregar_orden_total" prefHeight="48.0" prefWidth="235.0" style="-fx-background-color: #FFF;" text="AGREGAR ORDEN" textAlignment="CENTER" textFill="#111010" textOverrun="WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Corbel" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

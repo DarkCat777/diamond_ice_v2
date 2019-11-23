@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="669.0" style="-fx-background-color: #001824;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="213.0" layoutY="28.0" prefHeight="31.0" prefWidth="260.0" text="SISTEMA DE GESTIÓN" textFill="#f8f8f8">
+         <font>
+            <Font name="Corbel Bold" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_clientes" layoutX="64.0" layoutY="85.0" mnemonicParsing="false" onAction="#clientes_menu" prefHeight="105.0" prefWidth="121.0" style="-fx-background-color: #4A7FD2;" textFill="#6fd262">
+         <graphic>
+            <ImageView fitHeight="76.0" fitWidth="101.0" onMouseClicked="#cliente_menu" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/client_management_48px.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btn_empleado" layoutX="209.0" layoutY="85.0" mnemonicParsing="false" onAction="#empleados_menu" prefHeight="105.0" prefWidth="121.0" style="-fx-background-color: #9F4AD2;" textFill="#6fd262">
+         <graphic>
+            <ImageView fitHeight="76.0" fitWidth="101.0" onMouseClicked="#empleados_menu" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/employee_card_60px.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btn_tipo_prenda" layoutX="434.0" layoutY="356.0" mnemonicParsing="false" onAction="#tipo_prenda_menu" prefHeight="105.0" prefWidth="121.0" style="-fx-background-color: #BE4AD2;" textFill="#6fd262">
+         <graphic>
+            <ImageView fitHeight="76.0" fitWidth="101.0" onMouseClicked="#prenda_menu" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/clothes_64px.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btn_insumos" layoutX="358.0" layoutY="221.0" mnemonicParsing="false" onAction="#insumos_menu" prefHeight="105.0" prefWidth="121.0" style="-fx-background-color: #D24A5F;" textFill="#6fd262">
+         <graphic>
+            <ImageView fitHeight="63.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/enterprise_resource_planning_48px.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btn_ordenes_servicio" layoutX="208.0" layoutY="219.0" mnemonicParsing="false" onAction="#ordenes_servicio_menu" prefHeight="105.0" prefWidth="121.0" style="-fx-background-color: #D2674A;" textFill="#6fd262">
+         <graphic>
+            <ImageView fitHeight="76.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/services_64px.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btn_servicio" layoutX="64.0" layoutY="221.0" mnemonicParsing="false" onAction="#servicio_menu" prefHeight="105.0" prefWidth="121.0" style="-fx-background-color: #D24A9E;" textFill="#6fd262">
+         <graphic>
+            <ImageView fitHeight="76.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/services_64px.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="89.0" layoutY="164.0" prefHeight="31.0" prefWidth="85.0" text="CLIENTES" textFill="#f8f8f8">
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="163.0" prefHeight="31.0" prefWidth="95.0" text="EMPLEADOS" textFill="#f8f8f8">
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="436.0" layoutY="432.0" prefHeight="31.0" prefWidth="121.0" text="TIPOS DE PRENDAS" textFill="#f8f8f8">
+         <font>
+            <Font name="Corbel Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="299.0" prefHeight="31.0" prefWidth="76.0" text="SERVICIO" textFill="#f8f8f8">
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="382.0" layoutY="300.0" prefHeight="31.0" prefWidth="85.0" text="INSUMOS" textFill="#f8f8f8">
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="211.0" layoutY="298.0" prefHeight="31.0" prefWidth="121.0" text="ORDENES DE SERVICIO" textFill="#f8f8f8">
+         <font>
+            <Font name="Corbel Bold" size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_accesos" layoutX="359.0" layoutY="83.0" mnemonicParsing="false" onAction="#accesos_menu" prefHeight="105.0" prefWidth="121.0" style="-fx-background-color: #D24A5F;" textFill="#6fd262">
+         <graphic>
+            <ImageView fitHeight="90.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/key_64px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btn_tipo_insumo" layoutX="506.0" layoutY="217.0" mnemonicParsing="false" onAction="#tipo_insumo_menu" prefHeight="105.0" prefWidth="121.0" style="-fx-background-color: #4A7FD2;" textFill="#6fd262">
+         <graphic>
+            <ImageView fitHeight="61.0" fitWidth="56.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/enterprise_resource_planning_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="506.0" layoutY="297.0" prefHeight="31.0" prefWidth="121.0" text="TIPO DE INSUMO" textAlignment="CENTER" textFill="#f8f8f8">
+         <font>
+            <Font name="Corbel Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="358.0" layoutY="162.0" prefHeight="31.0" prefWidth="121.0" text="ACCESOS" textAlignment="CENTER" textFill="#f8f8f8">
+         <font>
+            <Font name="Corbel Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_recursos" layoutX="503.0" layoutY="81.0" mnemonicParsing="false" onAction="#recursos_menu" prefHeight="105.0" prefWidth="121.0" style="-fx-background-color: #9F4AD2;" textFill="#6fd262">
+         <graphic>
+            <ImageView fitHeight="76.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/purchase_order_240px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label alignment="CENTER" layoutX="504.0" layoutY="160.0" prefHeight="31.0" prefWidth="121.0" text="RECURSOS" textAlignment="CENTER" textFill="#f8f8f8">
+         <font>
+            <Font name="Corbel Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_rol" layoutX="279.0" layoutY="355.0" mnemonicParsing="false" onAction="#rol_menu" prefHeight="105.0" prefWidth="121.0" style="-fx-background-color: #D2674A;" textFill="#6fd262">
+         <graphic>
+            <ImageView fitHeight="74.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/soccer_yellow_card_128px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label alignment="CENTER" layoutX="279.0" layoutY="432.0" prefHeight="31.0" prefWidth="121.0" text="ROL" textFill="#f8f8f8">
+         <font>
+            <Font name="Corbel Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_mi_cuenta" layoutX="128.0" layoutY="357.0" mnemonicParsing="false" onAction="#mi_cuenta_view" prefHeight="105.0" prefWidth="121.0" style="-fx-background-color: #4A7FD2;" textFill="#6fd262">
+         <graphic>
+            <ImageView fitHeight="76.0" fitWidth="101.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/client_management_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label alignment="CENTER" layoutX="131.0" layoutY="434.0" prefHeight="31.0" prefWidth="115.0" text="MI CUENTA" textFill="#f8f8f8">
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

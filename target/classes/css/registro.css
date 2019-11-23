@@ -1,0 +1,30 @@
+
+#fondo {
+    -fx-background-color: #11121d;
+}
+
+#nombreUsuario, #direcionUsuario, #dniUsuario, #apellidosUsuario, #correoUsuario, #passwordUsuario {
+    -fx-text-fill: #ffff;
+    -fx-background-color: #11121d #ffff;
+    -fx-border-radius: 20px 20px 20px 20px;
+    -fx-background-radius: 20px 20px 20px 20px;
+    -fx-border-color: #11121d #11121d #ffff #11121d;
+}
+
+#menuTipoPersona, #estadoRegistroPersona {
+    -fx-background-color: #11121d;
+}
+
+#btnRegistrar {
+    -fx-text-fill: white;
+    -fx-background-color: #0074ff;
+    -fx-background-radius: 20px;
+    -fx-padding: 7px 30px;
+}
+
+#btnCancelar {
+    -fx-text-fill: white;
+    -fx-background-color: #c4392d;
+    -fx-background-radius: 20px;
+    -fx-padding: 7px 30px;
+}

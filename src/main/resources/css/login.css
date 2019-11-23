@@ -1,0 +1,24 @@
+#fondo {
+    -fx-background-color: #11121d;
+}
+
+#btnInicioSesion {
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #0074ff;
+    -fx-padding: 7 30;
+}
+#btnRegistrarse{
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #00e95b;
+    -fx-padding: 7 30;
+}
+
+#textCorreo, #textPassword {
+    -fx-text-fill: #ffff;
+    -fx-background-color: #11121d #ffff;
+    -fx-border-radius: 20px 20px 20px 20px;
+    -fx-background-radius: 20px 20px 20px 20px;
+    -fx-border-color: #11121d #11121d #ffff #11121d;
+}

@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Class-Path: javafx-graphics-13-win.jar org.eclipse.sisu.inject-0.3.3.j
+ ar hibernate-entitymanager-5.4.8.Final.jar slf4j-simple-1.7.22.jar gu
+ ava-25.1-android.jar xz-1.8.jar jandex-2.0.5.Final.jar jboss-transact
+ ion-api_1.2_spec-1.1.1.Final.jar antlr-2.7.7.jar plexus-utils-3.1.0.j
+ ar maven-resolver-util-1.3.1.jar javafx-base-13-win.jar maven-resolve
+ r-impl-1.3.1.jar jaxb-runtime-2.3.1.jar javax.el-3.0.0.jar animal-sni
+ ffer-annotations-1.14.jar javafx-controls-13.jar maven-plugin-api-3.6
+ .0.jar hibernate-validator-6.1.0.Final.jar snappy-0.4.jar jaxb-api-2.
+ 3.1.jar plexus-io-3.0.1.jar maven-builder-support-3.6.0.jar javafx-me
+ dia-13-win.jar checker-compat-qual-2.0.0.jar hibernate-validator-anno
+ tation-processor-6.1.0.Final.jar maven-resolver-provider-3.6.0.jar tx
+ w2-2.3.1.jar plexus-classworlds-2.5.2.jar javafx-base-13.jar hibernat
+ e-commons-annotations-5.1.0.Final.jar hibernate-java8-5.4.8.Final.jar
+  javafx-fxml-13-win.jar maven-model-3.6.0.jar jsr305-3.0.2.jar istack
+ -commons-runtime-3.0.7.jar plexus-java-0.9.11.jar j2objc-annotations-
+ 1.1.jar plexus-component-annotations-1.7.1.jar cdi-api-1.0.jar charm-
+ down-plugin-lifecycle-3.8.2.jar classmate-1.3.4.jar agroal-pool-1.6.j
+ ar maven-core-3.6.0.jar javax.el-api-3.0.0.jar slf4j-api-1.7.22.jar j
+ avax.inject-1.jar maven-model-builder-3.6.0.jar postgresql-42.2.8.jre
+ 7.jar org.eclipse.sisu.plexus-0.3.3.jar aopalliance-1.0.jar commons-i
+ o-2.6.jar javafx-web-13.jar javafx-media-13.jar commons-exec-1.3.jar
+ javafx-swing-13-win.jar maven-repository-metadata-3.6.0.jar plexus-se
+ c-dispatcher-1.4.jar validation-api-2.0.1.Final.jar agroal-api-1.6.ja
+ r maven-settings-builder-3.6.0.jar jakarta.validation-api-2.0.2.jar j
+ avax.activation-api-1.2.0.jar javafx-maven-plugin-0.0.3.jar stax-ex-1
+ .8.jar javassist-3.24.0-GA.jar plexus-interpolation-1.25.jar asm-7.0-
+ beta.jar qdox-2.0-M9.jar javafx-fxml-13.jar itextpdf-5.5.13.1.jar mav
+ en-artifact-3.6.0.jar qrgen-1.4.jar jsr250-api-1.0.jar commons-lang3-
+ 3.8.1.jar hibernate-core-5.4.8.Final.jar javafx-web-13-win.jar core-3
+ .0.0.jar javafx-graphics-13.jar error_prone_annotations-2.1.3.jar ple
+ xus-cipher-1.4.jar plexus-archiver-3.6.0.jar commons-compress-1.16.1.
+ jar javafx-controls-13-win.jar charm-down-core-3.8.2.jar javase-3.0.0
+ .jar maven-settings-3.6.0.jar maven-resolver-spi-1.3.1.jar dom4j-2.1.
+ 1.jar objenesis-2.6.jar byte-buddy-1.10.2.jar javafx-swing-13.jar mai
+ l-1.4.7.jar javax.persistence-api-2.2.jar mojo-executor-2.3.0.jar jbo
+ ss-logging-3.3.2.Final.jar maven-resolver-api-1.3.1.jar activation-1.
+ 1.jar FastInfoset-1.2.15.jar guice-4.2.1-no_aop.jar maven-shared-util
+ s-3.2.1.jar
+Main-Class: Main
+

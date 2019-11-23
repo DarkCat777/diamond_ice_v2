@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane_1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutY="35.0" prefHeight="41.0" prefWidth="725.0" style="-fx-background-color: #001824;">
+         <children>
+            <Text fill="WHITE" layoutX="47.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de Clientes" textAlignment="CENTER" wrappingWidth="186.13671875">
+               <font>
+                  <Font name="Tahoma" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="25.0" fitWidth="34.0" layoutX="35.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/gender_neutral_user_64px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <BorderPane layoutX="26.0" layoutY="97.0" prefHeight="25.0" prefWidth="151.0" style="-fx-background-color: #001824;">
+         <right>
+            <Button fx:id="btn_agregar_clientes" mnemonicParsing="false" onAction="#add_cliente" prefHeight="23.0" prefWidth="119.0" style="-fx-background-color: #001824;" text="Agregar Cliente" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="12.0" />
+               </font>
+            </Button>
+         </right>
+         <center>
+            <ImageView fitHeight="24.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../img/add_64px.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <BorderPane layoutX="204.0" layoutY="97.0" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #001824;">
+         <right>
+            <Button fx:id="btn_enviar_correo" mnemonicParsing="false" onAction="#enviar_correo" prefHeight="23.0" prefWidth="106.0" style="-fx-background-color: #001824;" text="Enviar Correo" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="12.0" />
+               </font>
+            </Button>
+         </right>
+         <center>
+            <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../img/mail_100px.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <BorderPane layoutX="556.0" layoutY="97.0" prefHeight="25.0" prefWidth="169.0">
+         <left>
+            <Button fx:id="btn_editar_cliente" mnemonicParsing="false" onAction="#editar_cliente" prefHeight="25.0" prefWidth="53.0" style="-fx-background-color: #001824;" text="editar" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="12.0" />
+               </font>
+            </Button>
+         </left>
+         <right>
+            <Button fx:id="btn_eliminar_cliente" mnemonicParsing="false" onAction="#delete_cliente" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #001824;" text="eliminar" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="12.0" />
+               </font>
+            </Button>
+         </right>
+         <center>
+            <Button fx:id="btn_ver_cliente" mnemonicParsing="false" onAction="#view_cliente" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: #001824;" text="ver" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="12.0" />
+               </font>
+            </Button>
+         </center>
+      </BorderPane>
+      <TableView fx:id="tabla_clientes" layoutX="30.0" layoutY="150.0" prefHeight="307.0" prefWidth="697.0" style="-fx-border-color: #001824;">
+        <columns>
+          <TableColumn prefWidth="93.59997177124023" text="DNI" />
+          <TableColumn prefWidth="144.00001525878906" text="Nombre" />
+            <TableColumn prefWidth="182.4000244140625" text="Direccion" />
+            <TableColumn prefWidth="132.79998779296875" text="Celular" />
+            <TableColumn minWidth="0.0" prefWidth="142.40008544921875" text="Estado" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
